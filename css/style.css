@@ -16,33 +16,17 @@ html{
 h1{
     line-height: 0.2rem;
 }
-p{
-    margin-block-start: 0;
-    margin-block-end: 0;
-    text-align: justify;
-}
+
 /* header section */
 .header{
     min-height: 100vh;
     width: 100%;
-    padding-top: 5%;
 }
 .header nav{
-    width: 97%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5% 8%;
-    /* box-shadow: 0 0 7px 0 rgba(0,0,0,0.1); */
-    position: fixed;
-    top:0;
-    left: 50%;
-    transform: translate(-50%,0);
-    background-color: #fff;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    z-index: 100;
-    transition: .5s;
+    padding: 1% 8%;
 }
 .header .bars{
     display: none;
@@ -53,7 +37,6 @@ p{
 .header nav .logo{
     font-size: 1.2rem;
     font-weight: 600;
-    cursor: pointer;
 }
 .header nav .nav-links{
     flex: 1;
@@ -111,17 +94,15 @@ p{
     padding: 3%;
 }
 .hero-part .left{
-    margin-top: 10%;
+    margin-top: 12%;
 }
 .hero-part .left h1{
     font-size: 4.5rem;
     line-height: 4rem;
-    font-weight: 500;
-    letter-spacing: 1px;
 }
 .hero-part .left p{
     font-size: 0.9rem;
-    width: 67%;
+    width: 70%;
     color: var(--gray_color_text);
     margin-top: 5%;
     margin-left: 1%;
@@ -134,168 +115,42 @@ p{
     text-decoration: none;
     font-weight: 500;
     margin-top: 2%;
-    font-size: 1rem;
+    font-size: 0.8rem;
     position: relative;
     display: inline-block;
-    transition: .5s;
-}
-.hero-part .left .hero-btn:hover{
-    box-shadow: 10px 10px 7px 0 rgba(0,0,0,0.3);
+    border-radius: 0.4rem;
 }
 .hero-part .left .message{
-    width: 70%;
     display: flex;
     align-items: center;
     margin-top: 6%;
-    /* box-shadow: 0 0 7px 0 rgba(0,0,0,0.1); */
-    padding: 3%;
+    box-shadow: 0 0 7px 0 rgba(0,0,0,0.1);
+    padding: 5%;
     border-radius: 1rem;
-    position: relative;
 }
-.hero-part .left .message img{
-    height: 7rem;
-    width: 8rem;
-    object-fit: cover;
-    position: absolute;
-    left: 0;
-    animation: upDown 3s infinite;
+.hero-part .left .message i{
+    font-size: 4rem;
+    color: var(--primary_color);
 }
-@keyframes upDown {
-    0%{
-        transform: rotateY(0deg);
-    }
-    25%{
-        transform: rotateY(20deg);
-    }
-    50%{
-        transform: rotateY(0deg);
-    }
-    75%{
-        transform: rotateY(180deg);
-    }
-    100%{
-        transform: rotateY(0deg);
-    }
-}
-
 .hero-part .left .message p{
     margin-top: 0;
-    font-size: 0.9rem;
-    margin-left: 30%;
-    line-height: 1.2rem;
-}
-.hero-part .right{
-    position: relative;
+    font-size: 0.8rem;
+    margin-left: 5%;
 }
 .hero-part .right img{
     width: 100%;
     height: auto;
     margin-top: 5%;
 }
-.offer{
-    width: 27%;
-    position: absolute;
-    top: 30%;
-    right: 20%;
-    /* background-color: white; */
-    padding: 1% 2%;
-    /* box-shadow: 0 0 14px 0.5px var(--primary_color); */
-    border-radius: 1.3rem;
-    backdrop-filter: blur(50px);
-}
-.offer .content{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-.offer .content i{
-    padding: 5%;
-    font-size: 1.5rem;
-    margin-right: 1rem; 
-    background-color: var(--primary_color);
-    border-radius: 1rem;
-    color: white;
-}
-.offer .content .inn-content{
-    color: black;
-    font-size: 0.8em;
-}
-.hero-part .bol-1{
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 2rem;
-    height: 2rem;
-    background-color: var(--primary_color);
-    z-index: 10;
-}
-.hero-part .bol-1{
-    position: absolute;
-    top:20%;
-    left: 10%;
-    width: 2rem;
-    height: 2rem;
-    background-color: var(--primary_color);
-    z-index: 10;
-    border-radius: 50%;
-    animation: animateBall 3s infinite;
-}
-.hero-part .bol-2{
-    position: absolute;
-    top:60%;
-    left: 50%;
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: var(--primary_color);
-    z-index: 10;
-    border-radius: 50%;
-    animation: animateBall 3s infinite;
-}
-.hero-part .bol-3{
-    position: absolute;
-    top:20%;
-    right: 10%;
-    width: 2rem;
-    height: 2rem;
-    background-color: var(--primary_color);
-    z-index: 10;
-    border-radius: 50%;
-    animation: animateBall 3s infinite;
-}
-.hero-part .bol-4{
-    position: absolute;
-    top:80%;
-    right: 10%;
-    width: 1rem;
-    height: 1rem;
-    background-color: var(--primary_color);
-    z-index: 10;
-    border-radius: 50%;
-    animation: animateBall 3s infinite;
-}
-@keyframes animateBall {
-    0%{
-        margin-top: 0%;
-    }
-    50%{
-        margin-top: 1%;
-    }
-    100%{
-        margin-top:  0%;
-    }   
-}
+
 /* adverties section */
-.adverties img{
-    position: relative;
-    z-index: -1;
-}
+
 .adverties .row{
     width: 65%;
     padding: 3% 3%;
     display: flex;
     justify-content: center;
-    margin: -1% auto 0% auto;
+    margin: auto;
     background-color: var(--black_color);
     border-radius: 1rem;
 }
@@ -307,31 +162,19 @@ p{
     color: white;
 }
 .adverties .left h2{
-    line-height: 1rem;
-    font-weight: 400;
+    line-height: 1.4rem;
 }
 .adverties .right{
     color: gray;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-.adverties .right p{
-    width: 70%;
 }
 .adverties .right a{
-    width: 4em;
-    height: 4em;
+    padding: 4%;
     background-color: var(--primary_color);
     color: white;
     margin-left: 2%;
     border-radius: 50%;
-    display: grid;
-    place-items: center;
-    text-decoration: none;
-}
-.adverties .right a i{
-    font-size: 1.5rem;
 }
 
 /* products section */
@@ -341,7 +184,6 @@ p{
 }
 .products h3{
     font-size: 3rem;
-    font-weight: 500;
     text-align: center;
 }
 .products .row{
@@ -359,17 +201,14 @@ p{
 }
 .products .row .col img{
     width: 100%;
-    /* height: 10rem; */
 }
 .products .row .col h4{
     margin: 2rem 0 1rem;
     font-size: 1.4rem;
-    font-weight: 500;
 }
 .products .row .col p{
     color: var(--gray_color_text);
     font-size: 0.8rem;
-    text-align: center;
 }
 .products .row .col a{
     text-decoration: none;
@@ -396,14 +235,13 @@ p{
     color: var(--gray_color_text);
     width: 50%;
     margin:2% auto;
-    text-align: center;
 }
 .best-service a{
     padding: 0.8% 2.5%;
     color: white;
     background-color: var(--primary_color);
     text-decoration: none;
-    font-size: 1rem;
+    border-radius: 0.6rem;
     display: inline-block;
 }
 
@@ -422,21 +260,17 @@ p{
 .about .row .col{
     flex-basis: 49%;
 }
-.about .row .left{
-    position: relative;
-}
 .about .row .left img{
     width: 100%;
     height: auto;
 }
 .about .row .right h3{
-    font-size: 3.5rem;
-    font-weight: 500;
+    font-size: 4rem;
 }
 .about .row .right p{
     color: var(--gray_color_text);
     font-size: 1rem;
-    width: 60%;
+    width: 80%;
     margin-top: 4%;
 }
 .about .row .right a{
@@ -444,13 +278,9 @@ p{
     margin-top: 4%;
     padding: 2% 6%;
     color: white;
-    font-size: 1rem;
     background-color: black;
     text-decoration: none;
-    transition: .5s;
-}
-.about .row .right a:hover{
-    box-shadow: 10px 10px 7px 0 rgba(0,0,0,0.3);
+    border-radius: 0.4rem;
 }
 
 
@@ -464,11 +294,9 @@ p{
 }
 .testimonial h2{
     font-size: 3rem;
-    font-weight: 500;
 }
 .testimonial p{
     color: var(--gray_color_text);
-    text-align: center;
 }
 .testimonial .row{
     width: 60%;
@@ -485,6 +313,7 @@ p{
     display: grid;
     place-items: center;
     box-shadow: 0 0 7px 0 rgba(0,0,0,0.1);
+    border-radius: 1rem;
 }
 .testimonial .row .col img{
     width: 6rem;
@@ -493,7 +322,6 @@ p{
     background-size: cover;
     border-radius: 50%;
     /* margin: 2% 0; */
-    object-fit: cover;
 }
 .testimonial .row .col h3{
     margin-top: 3%;
@@ -522,8 +350,7 @@ p{
 }
 .footer .row p{
     color: var(--gray_color_text);
-    font-size: 0.9rem;
-    text-align: center;
+    font-size: 0.8rem;
 }
 .footer .row ul li{
     display: inline-block;
@@ -535,10 +362,9 @@ p{
     color: var(--black_color);
 }
 .footer .row .social-icons a{
-    font-size: 1.3rem;
+    font-size: 2rem;
     color: rgba(0,0,0,0.7);
     margin: 0 1%;
-    transition: .5s;
 }
 .footer .row .social-icons a:hover{
     color: var(--primary_color);
