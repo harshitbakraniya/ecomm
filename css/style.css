@@ -1,6 +1,6 @@
 :root{
     --primary_color: #06d6a0;
-    --black_color:#000000;
+    --black_color:#272829       ;
     --gray_color_text:#909090;
 }
 
@@ -14,7 +14,7 @@ html{
     scroll-behavior: smooth;
 }
 h1{
-    line-height: 0.2rem;
+    line-height: 0.2em;
 }
 p{
     margin-block-start: 0;
@@ -39,8 +39,8 @@ p{
     left: 50%;
     transform: translate(-50%,0);
     background-color: #fff;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
     z-index: 100;
     transition: .5s;
 }
@@ -51,7 +51,7 @@ p{
     display: none;
 }
 .header nav .logo{
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-weight: 600;
     cursor: pointer;
 }
@@ -83,16 +83,14 @@ p{
 }
 .header nav .sign-btn{
     text-decoration: none;
-    color: var(--black_color);
-    border: 1.5px solid var(--black_color);
-    padding: 0.4% 1.5%;
-    border-radius: 0.4rem;
+    color: white;
+    background-color: var(--black_color);
+    padding: 0.8% 2%;
     font-weight: 500;
     transition: .5s;
 }
 .header nav .sign-btn:hover{
-    background-color: black;
-    color: white;
+    box-shadow: 10px 10px 7px 0 rgba(0,0,0,0.3);
 }
 /* hero part */
 
@@ -114,18 +112,18 @@ p{
     margin-top: 10%;
 }
 .hero-part .left h1{
-    font-size: 4.5rem;
-    line-height: 4rem;
+    font-size: 4.5em;
+    line-height: 0.7em;
     font-weight: 500;
     letter-spacing: 1px;
 }
 .hero-part .left p{
-    font-size: 0.9rem;
+    font-size: 0.9em;
     width: 67%;
     color: var(--gray_color_text);
     margin-top: 5%;
     margin-left: 1%;
-    line-height: 1.5rem;
+    line-height: 1.5em;
 }
 .hero-part .left .hero-btn{
     padding: 2.2% 5%;
@@ -134,7 +132,7 @@ p{
     text-decoration: none;
     font-weight: 500;
     margin-top: 2%;
-    font-size: 1rem;
+    font-size: 0.9em;
     position: relative;
     display: inline-block;
     transition: .5s;
@@ -149,12 +147,12 @@ p{
     margin-top: 6%;
     /* box-shadow: 0 0 7px 0 rgba(0,0,0,0.1); */
     padding: 3%;
-    border-radius: 1rem;
+    border-radius: 1em;
     position: relative;
 }
 .hero-part .left .message img{
-    height: 6rem;
-    width: 7rem;
+    height: 6em;
+    width: 7em;
     object-fit: cover;
     left: 0;
     animation: upDown 3s infinite;
@@ -179,9 +177,9 @@ p{
 
 .hero-part .left .message p{
     margin-top: 0;
-    font-size: 0.9rem;
+    font-size: 0.9em;
     margin-left: 4%;
-    line-height: 1.2rem;
+    line-height: 1.4em;
 }
 .hero-part .right{
     position: relative;
@@ -199,7 +197,7 @@ p{
     /* background-color: white; */
     padding: 1% 2%;
     /* box-shadow: 0 0 14px 0.5px var(--primary_color); */
-    border-radius: 1.3rem;
+    border-radius: 1.3em;
     backdrop-filter: blur(50px);
 }
 .offer .content{
@@ -210,68 +208,64 @@ p{
 }
 .offer .content i{
     padding: 5%;
-    font-size: 1.5rem;
-    margin-right: 1rem; 
+    font-size: 1.5em;
+    margin-right: 1em; 
     background-color: var(--primary_color);
-    border-radius: 1rem;
+    border-radius: 1em;
     color: white;
 }
 .offer .content .inn-content{
     color: black;
     font-size: 0.8em;
 }
-.hero-part .bol-1{
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 2rem;
-    height: 2rem;
-    background-color: var(--primary_color);
-    z-index: 10;
-}
+
 .hero-part .bol-1{
     position: absolute;
     top:20%;
     left: 10%;
-    width: 2rem;
-    height: 2rem;
+    width: 4em;
+    height: 4em;
     background-color: var(--primary_color);
     z-index: 10;
     border-radius: 50%;
     animation: animateBall 3s infinite;
+    filter: blur(10px);
 }
 .hero-part .bol-2{
     position: absolute;
     top:60%;
     left: 50%;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 5em;
+    height: 5em;
     background-color: var(--primary_color);
     z-index: 10;
     border-radius: 50%;
     animation: animateBall 3s infinite;
+    filter: blur(10px);
 }
 .hero-part .bol-3{
     position: absolute;
     top:20%;
     right: 10%;
-    width: 2rem;
-    height: 2rem;
+    width: 10em;
+    height: 10em;
     background-color: var(--primary_color);
     z-index: 10;
     border-radius: 50%;
     animation: animateBall 3s infinite;
+    filter: blur(10px);
 }
 .hero-part .bol-4{
     position: absolute;
     top:80%;
     right: 10%;
-    width: 1rem;
-    height: 1rem;
+    width: 2em;
+    height: 2em;
     background-color: var(--primary_color);
     z-index: 10;
     border-radius: 50%;
     animation: animateBall 3s infinite;
+    filter: blur(10px);
 }
 @keyframes animateBall {
     0%{
@@ -296,17 +290,18 @@ p{
     justify-content: center;
     margin: -1% auto 0% auto;
     background-color: var(--black_color);
-    border-radius: 1rem;
+    border-radius: 1em;
+    align-items: center;
 }
 .adverties .row .col{
     flex-basis: 49%;
 }
 .adverties .left{
-    font-size: 1.5rem;
+    font-size: 1.5em;
     color: white;
 }
 .adverties .left h2{
-    line-height: 1rem;
+    line-height: 0.4em;
     font-weight: 400;
 }
 .adverties .right{
@@ -330,7 +325,8 @@ p{
     text-decoration: none;
 }
 .adverties .right a i{
-    font-size: 1.5rem;
+    font-size: 1.5em;
+    font-weight: 300;
 }
 
 /* products section */
@@ -339,7 +335,7 @@ p{
     padding: 4% 0;
 }
 .products h3{
-    font-size: 3rem;
+    font-size: 3em;
     font-weight: 500;
     text-align: center;
 }
@@ -349,31 +345,37 @@ p{
     flex-wrap:wrap;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
+    margin: 2% auto;
 }
 .products .row .col{
     flex: 1 0 24%;
-    padding: 5%;
+    padding:2% 5%;
     text-align: center;
+    /* box-shadow: 0 0 3px 0 rgba(0,0,0,0.1); */
+    transition: .7s all;
+    cursor: pointer;
+}
+.products .row .col:hover{
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
 }
 .products .row .col img{
     width: 100%;
-    /* height: 10rem; */
+    /* height: 10em; */
 }
 .products .row .col h4{
-    margin: 2rem 0 1rem;
-    font-size: 1.4rem;
+    margin: 2em 0 1em;
+    font-size: 1.4em;
     font-weight: 500;
 }
 .products .row .col p{
     color: var(--gray_color_text);
-    font-size: 0.8rem;
+    font-size: 0.8em;
     text-align: center;
 }
 .products .row .col a{
     text-decoration: none;
     color: var(--black_color);
-    margin-top: 1rem;
+    margin-top: 1em;
     display: inline-block;
     font-weight: 500;
 }
@@ -382,13 +384,14 @@ p{
 .best-service{
     width: 100%;
     padding: 4%;
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../images/2795.jpg);
+    /* background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../images/2795.jpg); */
+    background-color: var(--black_color);
     text-align: center;
     background-position: center;
     background-size: cover;
 }
 .best-service h3{
-    font-size: 2rem;
+    font-size: 2em;
     color: white;
 }
 .best-service p{
@@ -402,7 +405,7 @@ p{
     color: white;
     background-color: var(--primary_color);
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1em;
     display: inline-block;
 }
 
@@ -429,12 +432,12 @@ p{
     height: auto;
 }
 .about .row .right h3{
-    font-size: 3.5rem;
+    font-size: 3.5em;
     font-weight: 500;
 }
 .about .row .right p{
     color: var(--gray_color_text);
-    font-size: 1rem;
+    font-size: 1em;
     width: 60%;
     margin-top: 4%;
 }
@@ -443,8 +446,8 @@ p{
     margin-top: 4%;
     padding: 2% 6%;
     color: white;
-    font-size: 1rem;
-    background-color: black;
+    font-size: 1em;
+    background-color: var(--black_color);
     text-decoration: none;
     transition: .5s;
 }
@@ -462,7 +465,7 @@ p{
     margin-top: 4%;
 }
 .testimonial h2{
-    font-size: 3rem;
+    font-size: 3em;
     font-weight: 500;
 }
 .testimonial p{
@@ -486,8 +489,8 @@ p{
     box-shadow: 0 0 7px 0 rgba(0,0,0,0.1);
 }
 .testimonial .row .col img{
-    width: 6rem;
-    height: 6rem;
+    width: 6em;
+    height: 6em;
     background-position: center;
     background-size: cover;
     border-radius: 50%;
@@ -500,7 +503,7 @@ p{
 .testimonial .row .col p{
     width: 80%;
     margin-top: 2%;
-    font-size: 0.9rem;
+    font-size: 0.9em;
 }
 
 
@@ -521,7 +524,7 @@ p{
 }
 .footer .row p{
     color: var(--gray_color_text);
-    font-size: 0.9rem;
+    font-size: 0.9em;
     text-align: center;
 }
 .footer .row ul li{
@@ -534,7 +537,7 @@ p{
     color: var(--black_color);
 }
 .footer .row .social-icons a{
-    font-size: 1.3rem;
+    font-size: 1.3em;
     color: rgba(0,0,0,0.7);
     margin: 0 1%;
     transition: .5s;
