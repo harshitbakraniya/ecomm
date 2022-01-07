@@ -82,6 +82,7 @@ p{
     text-decoration: none;
     color: var(--black_color);
     font-weight: 500;
+    font-size: 0.9rem;
 }
 .header nav .sign-btn{
     text-decoration: none;
