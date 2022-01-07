@@ -27,7 +27,7 @@
                     <li><a href="index.html">Contact</a></li>
                 </ul>
             </div>
-            <a href="signin.html" class="sign-btn">Sign In</a>
+            <a href="signin.html" class="sign-btn">SIGN IN</a>
             <i class="fas fa-bars bars" id="bars"></i>
             <i class="fas fa-times close" id="close"></i>
         </nav>
@@ -64,6 +64,11 @@
             <div class="bol-2"></div>
             <div class="bol-3"></div>
             <div class="bol-4"></div>
+        </div>
+        <div class="scroll-down">
+            <div class="scroll-main">
+                <div class="scroll-inn"></div>
+            </div>
         </div>
     </section>
 
@@ -268,11 +273,13 @@
             let nav = document.getElementById("navbar");
             if(window.pageYOffset > 5){
                 nav.style.background = "white";
-                nav.style.boxShadow = "0 0 7px 0 rgba(0,0,0,0.1)";
+                // nav.style.boxShadow = "0 0 7px 0 rgba(0,0,0,0.1)";
+                nav.style.border = "5px solid #06d6a0";
             }
             else{
                 nav.style.background = "transparent";
-                nav.style.boxShadow = "none";
+                // nav.style.boxShadow = "none";    
+                nav.style.border = "5px solid #ffffff";
             }
         })
     </script>
