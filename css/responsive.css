@@ -150,6 +150,9 @@
         padding: 3.5% 4%;
         font-size: 0.8rem;
     }
+    .hero-part {
+        padding-top: 20%;
+    }
     .hero-part .row {
         flex-direction: column-reverse;
     }
@@ -160,6 +163,7 @@
     .hero-part .row p {
         width: 100%;
         margin-top: 5%;
+        font-size: 0.9rem;
     }
     .hero-part .row .col {
         margin-top: 0;
@@ -185,7 +189,7 @@
     .adverties .row {
         width: 75%;
         flex-direction: column;
-        margin: 0% auto;
+        margin: -1% auto 0% auto;
     }
     .adverties .row .left {
         margin-top: 6%;
