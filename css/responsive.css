@@ -1,165 +1,288 @@
-@media screen and (max-width:1020px){
-    .products .row .col{
-        flex-basis: 1 0 33%;
+@media screen and (max-width:1025px) {
+    .products .row .col {
+        width: 33%;
     }
-} 
-@media screen and (max-width:700px) {
-    .header nav{
+    .header nav {
+        width: 100%;
         padding: 6% 8%;
+        background-color: #ffffff;
     }
-    .header nav .nav-links{
+    .header nav .nav-links {
         width: 100%;
         height: auto;
         background-color: white;
         box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
         position: absolute;
         right: 0%;
-        top:10%;
+        top: 100%;
         z-index: 100;
         display: none;
     }
-    .header .bars{
+    .header .bars {
         display: block;
     }
-    .header .close{
+    .header .close {
         display: none;
     }
-    .header nav .nav-links ul li{
+    .header nav .nav-links ul li {
         display: block;
         margin: 3rem 0;
     }
-    .header nav .sign-btn{
+    .header nav .sign-btn {
         margin-left: auto;
         margin-right: 5%;
         padding: 1.5% 4%;
     }
-    .hero-part .row{
+    .hero-part {
+        padding-top: 10%;
+    }
+    .hero-part .row {
         flex-direction: column-reverse;
     }
-    .hero-part .row h1{
-        font-size: 2.7rem;
-        line-height: 2rem;
+    .hero-part .row .left {
+        margin-top: 0%;
     }
-    .hero-part .row p{
+    .hero-part .row h1 {
+        font-size: 5rem;
+        line-height: 4rem;
+    }
+    .hero-part .row p {
         width: 100%;
+        font-size: 1.3rem;
     }
-    .hero-part .left .hero-btn{
-        padding: 4% 8%;
+    .hero-part .row .right {
+        text-align: center;
     }
-    .hero-part .left .message{
+    .hero-part .row .right img {
+        width: 80%;
+        margin: auto;
+    }
+    .hero-part .bol-1,
+    .bol-2,
+    .bol-3,
+    .bol-4 {
+        display: none;
+    }
+    .hero-part .left .message {
         margin: 10% 0;
     }
-    .hero-part .left .message p{
+    .hero-part .left .message p {
+        font-size: 1.4rem;
+        width: 100%;
+    }
+    .header .scroll-down {
+        display: none;
+    }
+    .adverties img {
+        width: 30%;
+    }
+    .adverties .row {
+        width: 80%;
+    }
+    .adverties .row .col {
+        flex-basis: 50%;
+    }
+    .adverties .row .left h3 {
+        font-size: 1.5rem !important;
+        line-height: 0rem;
+    }
+    .products .row {
+        width: 80%;
+    }
+    .about .row {
+        width: 80%;
+    }
+    h2 {
+        font-size: 2.4rem !important;
+    }
+    .about .row .right p {
+        width: 100%;
+    }
+    .about .row .right a {
+        margin-top: 10%;
+    }
+    .testimonial .row {
+        width: 80%;
+    }
+    .testimonial .row .col h4 {
+        margin-top: 1rem;
+    }
+    .footer .row .social-icons a {
+        width: 2rem;
+        height: 2rem;
+        padding: 1.3rem;
+    }
+}
+
+@media screen and (max-width:700px) {
+    h2 {
+        font-size: 1.7rem !important;
+        font-weight: 500;
+        margin: 4% 0;
+    }
+    .header nav {
+        padding: 6% 8%;
+    }
+    .header nav .nav-links {
+        width: 100%;
+        height: auto;
+        background-color: white;
+        box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        right: 0%;
+        top: 100%;
+        z-index: 100;
+        display: none;
+    }
+    .header .bars {
+        display: block;
+    }
+    .header .close {
+        display: none;
+    }
+    .header nav .nav-links ul li {
+        display: block;
+        margin: 3rem 0;
+    }
+    .header nav .sign-btn {
+        margin-left: auto;
+        margin-right: 5%;
+        padding: 3.5% 4%;
         font-size: 0.8rem;
     }
-    .hero-part .left .message i{
+    .hero-part .row {
+        flex-direction: column-reverse;
+    }
+    .hero-part .row h1 {
+        font-size: 2.2rem;
+        line-height: 1rem;
+    }
+    .hero-part .row p {
+        width: 100%;
+        margin-top: 5%;
+    }
+    .hero-part .row .col {
+        margin-top: 0;
+    }
+    .hero-part .left .hero-btn {
+        padding: 4% 8%;
+        margin-top: 3%;
+    }
+    .hero-part .left .message {
+        margin: 10% 0;
+    }
+    .hero-part .left .message img {
+        width: 3rem;
+        height: 3rem;
+        object-fit: cover;
+    }
+    .hero-part .left .message p {
+        font-size: 0.8rem;
+    }
+    .hero-part .left .message i {
         font-size: 3rem;
     }
-
-
-
-    .adverties .row{
+    .adverties .row {
         width: 75%;
         flex-direction: column;
-        margin: 10% auto;
+        margin: 0% auto;
     }
-    .adverties .row .left{
+    .adverties .row .left {
         margin-top: 6%;
         padding: 2%;
     }
-    .adverties .row .left h2{
+    .adverties .row .left h3 {
         font-size: 1.3rem;
         line-height: 0rem;
     }
-    .adverties .row .right{
+    .adverties .row .right {
         margin-top: 10%;
         padding: 2%;
     }
-    .adverties .row .right p{
-        font-size:0.8rem;
+    .adverties .row .right p {
+        font-size: 0.8rem;
     }
-
-    .products h3{
+    .adverties .row .right a {
+        width: 3rem;
+        height: 3rem;
+    }
+    .products h3 {
         font-size: 2rem;
         margin-bottom: 9%;
     }
-    .products .row{
+    .products .row {
         /* flex-direction: column; */
         width: 90%;
     }
-    .products .row .col{
-        flex:1 0 40%;
+    .products .row .col {
+        flex: 1 0 40%;
     }
-    .products .row .col h4{
+    .products .row .col h4 {
         font-size: 1rem;
     }
     .products .row .col {
         font-size: 0.7rem;
     }
-    .products .row .col a{
+    .products .row .col a {
         font-size: 0.9rem;
     }
-
-    .best-service h3{
+    .best-service h3 {
         font-size: 1.7rem;
         margin: 4% 0;
     }
-    .best-service p{
+    .best-service p {
         width: 100%;
         font-size: 0.8rem;
     }
-    .best-service a{
-        padding: 2% 3%;
+    .best-service a {
+        padding: 3% 5%;
         margin: 4% 0;
+        font-size: 0.8rem;
     }
-
-    .about .row{
+    .about .row {
         flex-direction: column;
     }
-    .about .row .right h3{
+    .about .row .right h3 {
         font-size: 2rem;
     }
-    .about .row .right p{
+    .about .row .right p {
         font-size: 0.8rem;
         width: 100%;
     }
-
-    .testimonial{
+    .testimonial {
         margin-top: 10%;
     }
-    .testimonial .row{
+    .testimonial .row {
         flex-direction: column;
         margin-top: 10%;
     }
-    .testimonial h2{
+    .testimonial h2 {
         font-size: 2rem;
     }
-    .testimonial p{
+    .testimonial p {
         font-size: 0.8rem;
         margin-top: 1rem;
         width: 80%;
         margin: auto;
     }
-    .testimonial .row .col{
+    .testimonial .row .col {
         padding: 7% 3%;
     }
-    .testimonial .row .col p{
+    .testimonial .row .col p {
         font-size: 0.8rem;
         margin-top: 1rem;
     }
-
-
-    .footer{
+    .footer {
         padding: 10% 3%;
         margin-top: 4%;
     }
-    .footer .row p{
+    .footer .row p {
         margin: 2rem 0;
     }
-    .footer .row ul li a{
+    .footer .row ul li a {
         font-size: 0.9rem;
     }
-    .footer .row .social-icons{
+    .footer .row .social-icons {
         margin: 0.7rem 0 0 0;
     }
 }

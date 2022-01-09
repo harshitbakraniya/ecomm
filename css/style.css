@@ -385,7 +385,7 @@ p {
     color: white;
 }
 
-.adverties .left h2 {
+.adverties .left h3 {
     line-height: 0.4em;
     font-weight: 400;
 }
@@ -425,7 +425,7 @@ p {
     padding: 4% 0;
 }
 
-.products h3 {
+.products h2 {
     font-size: 3em;
     font-weight: 500;
     text-align: center;
@@ -441,7 +441,8 @@ p {
 }
 
 .products .row .col {
-    flex-basis: 22%;
+    /* flex: 0 1 22%; */
+    width: 21%;
     padding: 2% 5%;
     text-align: center;
     /* box-shadow: 0 0 3px 0 rgba(0,0,0,0.1); */
@@ -460,8 +461,8 @@ p {
 
 .products .row .col h4 {
     margin: 2em 0 1em;
-    font-size: 1.4em;
-    font-weight: 500;
+    font-size: 1em;
+    font-weight: 600;
 }
 
 .products .row .col p {
@@ -491,7 +492,7 @@ p {
     background-size: cover;
 }
 
-.best-service h3 {
+.best-service h2 {
     font-size: 2em;
     color: white;
 }
@@ -541,7 +542,7 @@ p {
     height: auto;
 }
 
-.about .row .right h3 {
+.about .row .right h2 {
     font-size: 3.5em;
     font-weight: 500;
 }
@@ -617,8 +618,9 @@ p {
     object-fit: cover;
 }
 
-.testimonial .row .col h3 {
-    margin-top: 3%;
+.testimonial .row .col h4 {
+    margin-top: 2%;
+    font-size: 1.4rem;
 }
 
 .testimonial .row .col p {
