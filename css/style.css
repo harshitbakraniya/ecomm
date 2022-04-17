@@ -209,7 +209,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 11;
+    z-index: 0;
     gap: 10px;
 }
 .hero-part .left .hero-btn .inner{
