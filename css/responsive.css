@@ -118,9 +118,12 @@
         width: 3rem;
         height: 3rem;
     }
+    .all-pro{
+        margin-top: 3rem;
+    }
     .products h2 {
         font-size: 1.5rem;
-        margin-bottom: 9%;
+        margin: 9% 0;
     }
     .products .row {
         /* flex-direction: column; */
@@ -155,6 +158,9 @@
         padding: 3% 5%;
         margin: 4% 0;
         font-size: 0.8rem;
+    }
+    .about-pg{
+        margin-top: 5rem;
     }
     .about .row {
         width: 80%;
@@ -204,5 +210,46 @@
     }
     .footer .row .social-icons {
         margin: 0.7rem 0 0 0;
+    }
+    .head-for-contact{
+        height: 100%;
+    }
+    .contact-section{
+        margin-top: 4rem;
+        height: 100%;
+    }
+    .contact-section .row{
+        width: 80%;
+        flex-direction: column;
+    }
+    .contact-section .row .left{
+        padding: 20px;
+    }
+    .contact-section .row .right{
+        padding: 20px 0;
+    }
+    .contact-section .row .col{
+        width: 100%;
+    }
+    .contact-section .main-form .form-control{
+        width: 100%;
+    }
+    /* product detail page */
+    .detail{
+        margin-top: 6rem;
+    }
+    .detail .row{
+        flex-direction: column;
+    }
+    .detail .row .col{
+        width: 100%;
+    }
+    .detail .row .col.left .boxs{
+        width: 100%;
+        gap: 2px;
+    }
+    .detail .row .col.right .head{
+        width: 90%;
+        font-size: 1rem;
     }
 }
