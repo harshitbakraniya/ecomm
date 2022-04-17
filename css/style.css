@@ -79,8 +79,11 @@ p {
     margin: 0 2%;
     list-style: none;
 }
-
-.header nav .nav-links ul li::after {
+.header nav .nav-links ul li.active::after{
+    width: 100% !important;
+}
+.header nav .nav-links ul li::after,
+.header nav .nav-links ul li.active::after {
     content: '';
     height: 2px;
     width: 0%;
