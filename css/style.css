@@ -3,7 +3,7 @@
     --black_color: #272829;
     --gray_color_text: #909090;
     --white_color:#ffffff;
-    --btn_hover:#4895ef;
+    --btn_hover:#20766C;
 }
 
 * {
@@ -13,7 +13,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-html {
+html {  
     scroll-behavior: smooth;
 }
 
@@ -455,8 +455,11 @@ p {
     font-weight: 400;
     font-size: 0.8rem;    
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.25);
+    transition: .5s all;
 }
-
+.products .row .col a:hover{
+    background-color: var(--btn_hover);
+}
 
 /* Best Service by our team */
 
@@ -784,8 +787,11 @@ select:focus {
     letter-spacing: 1px;
     cursor: pointer;
     margin-top: 1rem;
+    transition: .5s all;
 }
-
+.contact-section .main-form .btn:hover{
+    background-color: var(--btn_hover);
+}
 /* products page */
 .category-1{
     position: relative;            

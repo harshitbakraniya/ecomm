@@ -1,14 +1,21 @@
+:root {
+    --primary_color: #2a9d8f;
+    --black_color: #272829;
+    --gray_color_text: #909090;
+    --white_color:#ffffff;
+    --btn_hover:#20766C;
+}
 @media screen and (max-width:700px) {
-
+    /* header section */
     .header nav {
         padding: 6% 8%;
-        background-color: #272829;
+        background-color: var(--black_color);
         z-index: 10;
     }
     .header nav .nav-links {
         width: 90%;
         height: auto;
-        background-color: #272829;
+        background-color: var(--black_color);
         box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
         position: absolute;
         left: 50%;
@@ -21,7 +28,7 @@
     }
     .header .bars{
         display: block;
-        color: white;
+        color: var(--white_color);
         font-size: 1.5rem;
     }
     .header .close{
@@ -32,7 +39,7 @@
     }
     .header nav .nav-links.active ~ .close{
         display: block;
-        color: white;
+        color:var(--white_color);
     }
     .header nav .nav-links.active ~ .bars{
         display: none;
@@ -52,6 +59,7 @@
         padding: 3.5% 4%;
         font-size: 0.8rem;
     }
+    /* hero part in page  */
     .hero-part {
         padding-top: 20%;
     }
@@ -95,6 +103,7 @@
     .hero-part .bol-2,.bol-3,.bol-4{
         display: none;
     }
+    /* adverties section */
     .adverties .row {
         width: 75%;
         flex-direction: column;
@@ -118,6 +127,7 @@
         width: 3rem;
         height: 3rem;
     }
+    /* product page and product section */
     .all-pro{
         margin-top: 3rem;
     }
@@ -146,6 +156,7 @@
         font-size: 0.7rem;
         padding: 10px 13px;
     }
+    /* service section */
     .best-service h2{
         font-size: 1.5rem;
         margin: 4% 0;
@@ -159,6 +170,7 @@
         margin: 4% 0;
         font-size: 0.8rem;
     }
+    /* about-page and section */
     .about-pg{
         margin-top: 5rem;
     }
@@ -177,6 +189,7 @@
         font-size: 0.8rem;
         width: 100%;
     }
+    /* testimonial section */
     .testimonial .row {
         flex-direction: column;
         margin-top: 10%;
@@ -198,6 +211,7 @@
     .testimonial .row .col p {
         font-size: 0.8rem;
     }
+    /* footer section */
     .footer {
         padding: 10% 3%;
         margin-top: 4%;
@@ -214,6 +228,8 @@
     .head-for-contact{
         height: 100%;
     }
+
+    /* contact page */
     .contact-section{
         margin-top: 4rem;
         height: 100%;
