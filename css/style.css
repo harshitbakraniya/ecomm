@@ -830,6 +830,7 @@ select:focus {
     width: 100%;
     display: grid;
     place-items: center;
+    padding: 4rem 0;
 }
 .detail .row{
     width: 80%;
@@ -872,7 +873,7 @@ select:focus {
     border-color: var(--primary_color);
 }
 .detail .row .col.right{
-    padding-top:5%;
+    padding-top:10%;
     align-self: flex-start;
 }
 .detail .row .col.right .head{
@@ -905,16 +906,6 @@ select:focus {
     font-size: 0.8rem;
     font-weight: 600;
 }
-.detail .row .col.right .about-item h5{
-    font-size: 1rem;
-}
-.detail .row .col.right .about-item ul{
-    margin-left: 2rem;
-    margin-top: 0.8rem;
-}
-.detail .row .col.right .about-item ul li{
-    margin: 0.5rem;
-}
 
 .related-product .head{
     width: 220px;
@@ -928,4 +919,19 @@ select:focus {
 
 .products-main .best-selling{   
     padding-top: 6%;
+}
+
+.about-part .row{
+    padding-left: 10%;
+    margin: 4rem;
+}
+.about-part .about-item h5{
+    font-size: 1rem;
+}
+.about-part .row .about-item ul{
+    margin-left: 2rem;
+    margin-top: 0.8rem;
+}
+.about-part .row .about-item ul li{
+    margin: 0.5rem;
 }
