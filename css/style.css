@@ -926,6 +926,6 @@ select:focus {
     font-weight: 500;
 }
 
-.products-main .products{
-    padding-top: 7%;
+.products-main .best-selling{   
+    padding-top: 6%;
 }
