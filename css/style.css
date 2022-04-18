@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap');
 :root {
     --primary_color: #2a9d8f;
     --black_color: #272829;
@@ -10,7 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lexend', sans-serif;
 }
 
 html {  
@@ -70,8 +71,9 @@ p {
 
 .header nav .nav-links {
     flex: 1;
-    text-align: center;
+    /* text-align: center; */
     color: #fff;
+    text-align: right;
 }
 
 .header nav .nav-links ul li {
@@ -105,7 +107,7 @@ p {
     letter-spacing: 1px;
 }
 
-.header nav .sign-btn {
+/* .header nav .sign-btn {
     text-decoration: none;
     color: white;
     background-color: var(--primary_color);
@@ -118,7 +120,7 @@ p {
 
 .header nav .sign-btn:hover {
     background-color: var(--btn_hover);
-}
+} */
 
 .header .scroll-down {
     width: 100%;
@@ -402,6 +404,7 @@ p {
     align-items: center;
     margin: 2% auto;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .products .row .col {
@@ -416,10 +419,17 @@ p {
     position: relative;
     overflow: hidden;
 }
-
+.products .row .col:hover img{ 
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
 .products .row .col img {
     width: 100%;
     /* height: 10em; */
+    -moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
 }
 
 .products .row .col h4 {    
@@ -466,11 +476,11 @@ p {
 .best-service {
     width: 100%;
     padding: 4%;
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../images/service-back.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/service-back2.jpg);
     background-color: var(--black_color);
     text-align: center;
     background-position: center;
-    background-size: 100% 100%;
+    background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
