@@ -21,6 +21,11 @@
     }
     .products .row .col{
         flex: 0 1 30%;
+        padding: 2% 20px;
+    }
+    .products .row .col a {
+        font-size: 0.7rem;
+        padding: 10px 13px;
     }
     .testimonial .row{
         flex-wrap: wrap;
@@ -169,6 +174,7 @@
     }
     .products .row .col {
         flex: 1 0 40%;
+        padding: 2% 20px;
     }
     .products .row .col h4 {
         font-size: 0.9rem;

@@ -456,7 +456,7 @@ p {
     margin: 0 !important;
 }
 .products .row .col a {
-    padding: 10px 21px;
+    padding: 10px 15px;
     text-decoration: none;
     background-color: var(--primary_color);
     color: var(--white_color);
