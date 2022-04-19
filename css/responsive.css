@@ -10,6 +10,7 @@
         z-index: 100;
     }
     .hero-part .row{
+        width: 80%;
         align-items: center;
     }
     .hero-part .right img{
@@ -103,6 +104,7 @@
         padding-top: 20%;
     }
     .hero-part .row {
+        width: 80%;
         flex-direction: column-reverse;
     }
     .hero-part .row h1 {
@@ -167,7 +169,7 @@
         height: 3rem;
     }
     /* product page and product section */
-    .all-pro{
+    .best-selling{
         margin-top: 3rem;
     }
     .products h2 {
@@ -282,7 +284,7 @@
         padding: 20px;
     }
     .contact-section .row .right{
-        padding: 20px 0;
+        padding: 20px 0px;
     }
     .contact-section .row .col{
         width: 100%;
